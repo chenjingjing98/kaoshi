@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>第一题</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+    <script src="./swiper-bundle.min.js"></script>
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        /* position: relative; */
+        height: 100%;
+      }
+
+      body {
+        background-color: rgb(43, 43, 43);
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: rgb;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 80%;
+        height: 70%;
+        object-fit: cover;
+      }
+      .top_box {
+        width: 500px;
+        height: 50px;
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .bottom_box {
+        width: 500px;
+        height: 60px;
+
+        position: absolute;
+        bottom: 50px;
+        left: 30%;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .main span,
+      .bottom_main span,
+      .top_main span,
+      .main a {
+        color: white;
+      }
+      .swiper-button-disabled {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://img0.baidu.com/it/u=2719697550,1140856020&fm=253&fmt=auto&app=138&f=JPEG?w=753&h=500"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://b1-q.mafengwo.net/s11/M00/C9/4A/wKgBEFtr9dqAf-g2AA11ccoqPOY02.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://pic.vjshi.com/2021-11-26/ce0b8bbba2174c3294eb17a040b61a44/online/e27e4fb35ffa489599b4e22d7aebaf16.jpg?x-oss-process=style/resize_w_720"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://photo.tuchong.com/24791412/f/1169694332.jpg"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://p4.itc.cn/q_70/images03/20220519/ce25f080faa44bf089e8de2f901f1c8d.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <!-- 上内容盒子 -->
+      <div class="top_box">
+        <div class="top_main">
+            <span>可是可是妈妈1</span>
+        </div>
+        <div class="bottom_main">
+          <span>可是可是妈妈2</span>
+        </div>
+      </div>
+      <!-- 下内容盒子 -->
+      <div class="bottom_box">
+        <div class="main">
+          <svg
+            t="1683360388581"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="1622"
+            width="32"
+            height="32"
+          >
+            <path
+              d="M795.2 304h-108v-72.8c0-49.7-40.3-90.1-90.1-90.1h-390c-49.7 0-90.1 40.3-90.1 90.1v390c0 49.7 40.3 90.1 90.1 90.1h121.7V771c0 48 39.1 86.8 87.4 86.8h378.9c48.3 0 87.4-38.9 87.4-86.8V390.8c0.1-47.9-39-86.8-87.3-86.8z m-417.4-40.8c0-13.5 10.9-24.4 24.4-24.4s24.4 10.9 24.4 24.4v16.3c0 13.5-10.9 24.4-24.4 24.4s-24.4-10.9-24.4-24.4v-16.3z m-90.5 246.7c-9.9-9.9-9.9-26 0-35.9s26-9.9 35.9 0l54.7 54.7V360.9c0-13.5 10.9-24.4 24.4-24.4s24.4 10.9 24.4 24.4v167.7l54.7-54.7c9.9-9.9 26-9.9 35.9 0 9.9 9.9 9.9 26 0 35.9l-95.8 95.8c-3.8 3.8-8.7 6.2-13.8 7.1-1.8 0.4-3.6 0.6-5.5 0.6s-3.7-0.2-5.5-0.6c-5-0.8-9.8-3.2-13.8-7.1l-95.6-95.7z m530.1 254.5c0 15.5-12.7 28.1-28.2 28.1H422.3c-15.5 0-28.2-12.6-28.2-28.1v-53.3h203.2c49.7 0 90.1-40.3 90.1-90.1V369h102c15.5 0 28.2 12.6 28.2 28.1v367.3h-0.2z"
+              fill="#ffffff"
+              p-id="1623"
+            ></path>
+          </svg>
+          <span>保存</span>
+        </div>
+        <div class="main">
+          <svg
+            t="1683360786257"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="2428"
+            width="30"
+            height="30"
+          >
+            <path
+              d="M741.5 172.4h-455c-94.6 0-171.6 77-171.6 171.6v338.5c0 94.6 77 171.6 171.6 171.6h455c94.6 0 171.6-77 171.6-171.6V344c-0.1-94.6-77-171.6-171.6-171.6z m128.8 510c0 71-57.8 128.8-128.8 128.8h-455c-71 0-128.8-57.8-128.8-128.8V344c0-71 57.8-128.8 128.8-128.8h455c71 0 128.8 57.8 128.8 128.8v338.4z"
+              p-id="2429"
+              fill="#ffffff"
+            ></path>
+            <path
+              d="M410.5 478.9c58.6 0 106.2-47.7 106.2-106.2 0-58.6-47.7-106.2-106.2-106.2-58.6 0-106.2 47.7-106.2 106.2S352 478.9 410.5 478.9z m0-169.7c35 0 63.5 28.5 63.5 63.5s-28.5 63.5-63.5 63.5-63.5-28.5-63.5-63.5c0-35.1 28.5-63.5 63.5-63.5zM657.8 473.3c-9.7-15.6-26.5-25-44.8-25.3-18.5-0.3-35.4 8.7-45.5 24l-71.4 107.8-37.4-52.7c-10.3-14.6-27-23-45-22.6-17.9 0.4-34.3 9.6-43.9 24.7l-90.5 141c-4.2 6.6-4.5 14.9-0.8 21.8s10.9 11.1 18.7 11.1h465.4c7.8 0 14.9-4.2 18.7-11 3.8-6.8 3.6-15.1-0.6-21.7L657.8 473.3zM336.4 660.4l69.4-108.1c2.7-4.3 6.8-5 9-5s6.3 0.5 9.2 4.6l55.4 78.1c4 5.7 10.5 9 17.4 9h0.3c7-0.1 13.6-3.7 17.5-9.6l88.6-133.8c3-4.5 7.4-5 9.3-4.9 1.8 0 6.3 0.6 9.2 5.2l102.6 164.5H336.4z"
+              p-id="2430"
+              fill="#ffffff"
+            ></path>
+          </svg>
+          <span onclick="look()">查看图片</span>
+        </div>
+        <div class="main">
+          <svg
+            t="1683360845650"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="8645"
+            width="28"
+            height="28"
+          >
+            <path
+              d="M791.924038 294.764618L321.11944 56.291854v-3.582209C321.11944 23.54023 297.57921 0 267.898051 0 238.728636 0 215.188406 23.54023 215.188406 53.221389v917.557222c0 29.169415 23.54023 53.221389 53.221389 53.221389 29.169415 0 53.221389-23.54023 53.221389-53.221389V588.505747l470.804598-238.472763c22.004998-11.258371 22.004998-44.009995-0.511744-55.268366z"
+              fill="#ffffff"
+              p-id="8646"
+            ></path>
+          </svg>
+          <span>标记为不合适</span>
+        </div>
+        <div class="main">
+          <svg
+            t="1683360624999"
+            class="icon"
+            viewBox="0 0 1024 1024"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            p-id="7501"
+            width="32"
+            height="32"
+          >
+            <path
+              d="M841.085552 395.21211c-62.669318 0-113.472378 49.541323-113.472378 110.642936 0 61.093427 50.80306 110.652146 113.472378 110.652146 62.685691 0 113.487727-49.559742 113.487727-110.652146C954.573279 444.75241 903.77022 395.21211 841.085552 395.21211zM500.653069 395.21211c-62.668295 0-113.487727 49.541323-113.487727 110.642936 0 61.093427 50.820456 110.652146 113.487727 110.652146 62.669318 0 113.472378-49.559742 113.472378-110.652146C614.125447 444.75241 563.322387 395.21211 500.653069 395.21211zM182.915471 395.21211c-62.686714 0-113.488751 49.541323-113.488751 110.642936 0 61.093427 50.802036 110.652146 113.488751 110.652146 62.669318 0 113.471354-49.559742 113.471354-110.652146C296.385802 444.75241 245.583766 395.21211 182.915471 395.21211z"
+              p-id="7502"
+              fill="#ffffff"
+            ></path>
+          </svg>
+          <span>更多</span>
+        </div>
+        <div class="main">
+          <a
+            href="http://127.0.0.1:5500/chenjingjishi/Echarts.html"
+            target="_blank"
+            >第二题</a
+          >
+        </div>
+      </div>
+
+      <div class="swiper-button-next" onclick="moveImg(2)"></div>
+      <div class="swiper-button-prev" onclick="moveImg(1)"></div>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+      let arr = [
+        {
+          top: "shang1",
+          bom: "xia1",
+        },
+        {
+          top: "shang2",
+          bom: "xia2",
+        },
+        {
+          top: "shang3",
+          bom: "xia3",
+        },
+        {
+          top: "shang4",
+          bom: "xia4",
+        },
+        {
+          top: "shang5",
+          bom: "xia5",
+        },
+      ];
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          slideChangeTransitionEnd: function () {
+            if (this.isEnd) {
+              this.navigation.$nextEl.css("display", "none");
+            } else {
+              this.navigation.$nextEl.css("display", "block");
+            }
+          },
+        },
+      });
+      //定义全局index作为图片的下标
+      let indexs = 0;
+      //点击按钮
+      function moveImg(index) {
+        let top_main = document.querySelector(".top_main");
+        let bottom_main = document.querySelector(".bottom_main");
+        if (index === 2) {
+          ++indexs;
+          console.log(arr[indexs]);
+
+          let str1 = `<span class="span1">${arr[indexs].top}</span>`;
+          let str2 = `<span class="span1">${arr[indexs].bom}</span>`;
+          top_main.innerHTML = str1;
+          bottom_main.innerHTML = str2;
+          console.log(top_main);
+          console.log(indexs);
+        } else {
+          --indexs;
+          console.log(indexs);
+        }
+      }
+      //查看图片
+      function look() {}
+    </script>
+  </body>
+</html>
